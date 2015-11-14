@@ -1,17 +1,26 @@
 nav{
     text-align:center;
+    margin: 1em auto;
 }
 
 nav a{
     text-decoration:none;
+    margin-right: 1em;
+    color: darkblue;
+}
+nav a:last-child {
+    margin-right: 0;
+}
+nav a:hover {
+    color: red;
 }
 
 img{
         float:left;
         max-width: 20%;
         margin-right: 2%;
+        padding: 0 1em;
         clear:both;
-    
 }
 
 p{
