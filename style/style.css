@@ -7,12 +7,15 @@ nav a{
     text-decoration:none;
     margin-right: 1em;
     color: darkblue;
+    background: orange;
+    padding: .5em 1.2em;
 }
 nav a:last-child {
     margin-right: 0;
 }
 nav a:hover {
-    color: red;
+    color: #fff;
+    background: darkblue;
 }
 
 img{
