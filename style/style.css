@@ -1,34 +1,82 @@
-// merge from conner
-nav {
-	text-align:center;
+* {
+    box-sizing: border-box;
+}
+
+nav{
+    text-align:center;
+    margin: 3em auto;
+
 }
 
 nav a {
-	text-decoration:none;
-}
-
-img {
-	float:left;
-	max-width: 20%;
-	margin-right: 2%;
-	clear:both;
+    text-decoration:none;
+    margin: 0 .3em 0;
+    padding: .5em 1em;
+    background: orange;
+    color: darkblue;
+    font-size: 1em;
 
 }
-
-p {
-	overflow:auto;
-	display:block;
+nav a:last-child {
+    margin-right: 0;
 }
-
+nav a:hover {
+    background: darkblue;
+    color: #fff;
+}
+.active {
+  background: darkblue;
+  color: #fff;
+}
 .mainContent {
-	width:75%;
-	/*height: 100vh;*/
-	margin: 0 auto;
-	border: 1px solid green;
+    width:75%;
+    background: #fff;
+    margin: 0 auto;
+    border: 8px solid #eef;
+    overflow:auto;
 }
-
 article {
-	border: 1px solid yellow;
-	width:100%;
-	overflow:auto;
+    border: 4px solid #ffa;
+    margin-bottom: 1em;
+    background: #fff;
+    width:100%;
+    overflow: auto;
+}
+.imageContainer {
+    width:15%;
+    height:6em;
+    display:inline-block;
+    background-image: url("http://img.shein.com/images/sheinside.com/201409/1410500931408692520.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 0 -1em  1em;
+}
+p{
+        width: 75%;
+        font-size: .85em;
+        line-height: 1.5;
+        display:inline-block;
+        margin-left: 1em;
+        padding-bottom: 1.2em;
+}
+@media screen and (max-width: 650px) {
+    nav a {
+        width: 100%;
+        float: left;
+        margin-bottom: .5em;
+    }
+    .imageContainer {
+        display: block;
+        width:35%;
+        height:15em;
+        margin: 0 auto -6em;
+    }
+    p {
+        width: 95%;
+        font-size: .95em;
+        line-height: 1.5;
+        display: block;
+        text-align: center;
+    }
+  
 }
